@@ -1,0 +1,200 @@
+4.
+cd desktop 
+cd SI_2022_lab1 
+git clone https://github.com/stefanovskii/SI_2022_lab1_205008.git
+Cloning into 'SI_2022_lab1_205008'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+5.
+git status
+git add .
+git commit -m "Add 5 items to the shopping list"
+[master aca89ad] Add 5 items to the shopping list
+1 file changed, 5 insertions(+)
+create mode 100644 shopping_list.txt
+
+6.
+git status
+git add .
+git commit -m "Add quantities to the items"
+[master 53ef05d] Add quantities to the items
+1 file changed, 5 insertions(+), 5 deletions(-)
+
+7.
+git branch branch1
+git branch branch2
+
+8.
+git log
+commit f77cd782607e5c90724ed95f68ccd88ac6efd831 (HEAD -> master, branch2, branch1)
+Author: Ivan Stefanovski <istefanovski46@gmail.com>
+Date:   Fri Mar 11 17:40:49 2022 +0100
+
+    Add quantities to the items.
+
+commit 160cc8aed28ff22af4b465b6268a6e2a270f5b5c
+Author: Ivan Stefanovski <istefanovski46@gmail.com>
+Date:   Fri Mar 11 17:32:38 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit be5377ea38a77dc08a38ddd6802f951fcf7944c8 (origin/master, origin/HEAD)
+Author: Ivan <100297403+stefanovskii@users.noreply.github.com>
+Date:   Fri Mar 11 17:21:00 2022 +0100
+
+    Initial commit
+
+9.
+git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 644 bytes | 644.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/stefanovskii/SI_2022_lab1_205008.git
+   e07b15d..53ef05d  master -> master
+
+10.
+git checkout branch1
+Switched to branch 'branch1'
+
+11.
+git commit -m "Change quantity of item #5"
+[branch1 26b3262] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12.
+git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+13.
+git commit -m "Change quantity of item #2"
+[master d0e371e] Change quantity of item #2
+1 file changed, 1 insertion(+), 1 deletion(-)
+
+14.
+git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 347 bytes | 347.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/stefanovskii/SI_2022_lab1_205008.git
+   53ef05d..d0e371e  master -> master
+
+git push --all origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/stefanovskii/SI_2022_lab1_205008.git
+ * [new branch]      branch1 -> branch1
+ * [new branch]      branch2 -> branch2
+
+15.
+git checkout branch2
+Switched to branch 'branch2'
+
+16.
+git commit -m "Modify item #4"
+[branch2 4053265] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+17.
+git log
+commit 4053265c07a98d90f398361c7a61ee3d7487c7d6 (HEAD -> branch2)
+Author: Ivan Stefanovski <istefanovski46@gmail.com>
+Date:   Wed Mar 16 12:44:04 2022 +0100
+
+    Modify item #4
+
+commit 53ef05daf1baf915913c2b410276811f06e4429c (origin/branch2)
+Author: Ivan Stefanovski <istefanovski46@gmail.com>
+Date:   Wed Mar 16 12:33:05 2022 +0100
+
+    Add quantities to the items
+
+commit aca89ad0b9d6f3af1179e15bb613fb42464bb7f8
+Author: Ivan Stefanovski <istefanovski46@gmail.com>
+Date:   Wed Mar 16 12:29:47 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit e07b15d39d07e88396dbe5798829830db1a1728b
+Author: Ivan <100297403+stefanovskii@users.noreply.github.com>
+Date:   Wed Mar 16 12:08:46 2022 +0100
+
+    Initial commit
+
+18.
+git commit --amend -m "Modify item #4 and add item #6"
+[branch2 a62b837] Modify item #4 and add item #6
+ Date: Wed Mar 16 12:44:04 2022 +0100
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+19.
+git log
+commit a62b837ccd382d9dc3f58dd74e9e0792f9c27f86 (HEAD -> branch2)
+Author: Ivan Stefanovski <istefanovski46@gmail.com>
+Date:   Wed Mar 16 12:44:04 2022 +0100
+
+    Modify item #4 and add item #6
+
+commit 53ef05daf1baf915913c2b410276811f06e4429c (origin/branch2)
+Author: Ivan Stefanovski <istefanovski46@gmail.com>
+Date:   Wed Mar 16 12:33:05 2022 +0100
+
+    Add quantities to the items
+
+commit aca89ad0b9d6f3af1179e15bb613fb42464bb7f8
+Author: Ivan Stefanovski <istefanovski46@gmail.com>
+Date:   Wed Mar 16 12:29:47 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit e07b15d39d07e88396dbe5798829830db1a1728b
+Author: Ivan <100297403+stefanovskii@users.noreply.github.com>
+Date:   Wed Mar 16 12:08:46 2022 +0100
+
+    Initial commit
+
+20.
+git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+21.
+git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+git add .
+
+git commit -m "Merge branch 'branch2'"
+[master 9052174] Merge branch 'branch2'
+
+22.
+git add .
+git commit -m "Add docs"
+
+23.
+git push --all origin
+
+
+
+
