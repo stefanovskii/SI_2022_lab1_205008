@@ -1,5 +1,6 @@
 bread x 2
 apple x 5
 milk x 3
-cake x 1
-butter x 3
+joghurt x 1
+butter x 2
+cake x 3
