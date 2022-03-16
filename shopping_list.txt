@@ -2,4 +2,4 @@ bread x 2
 apple x 4
 milk x 3
 cake x 1
-butter x 2
+butter x 3
